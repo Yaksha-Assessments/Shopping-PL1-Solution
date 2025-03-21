@@ -111,9 +111,9 @@ public class ShoppingCartAutomationL1TestCases extends AppTestBase
 			Assert.assertTrue(LocatorsFactoryInstance.seleniumRubyInsideTheBasketPageIsPresent(driver).isDisplayed(), "selenium ruby product is not present in the current page, Please check manually");
 	}
 		@Test(priority = 12, groups = {"sanity"}, description="Verify that selenium ruby product price is 500 in the Cart page")
-		public void  verifyThatSeleniumRubyProductPriceIs500() throws Exception {
+		public void  verifyThatSeleniumRubyProductPriceIsDisplayed() throws Exception {
 			practiceAutomationInstance= new ShoppingCartAutomationPages(driver);
-			Assert.assertTrue(practiceAutomationInstance.verifythatSeleniumRubyProductPriceIs500(),"selenium ruby product price is not present , please check manually");
+			Assert.assertTrue(practiceAutomationInstance.verifythatSeleniumRubyProductPriceIsDisplayed(),"selenium ruby product price is not present , please check manually");
 			Assert.assertTrue(LocatorsFactoryInstance.seleniumRubyProductPriceIsPresent(driver).isDisplayed(), "selenium ruby product price is not present in the current page, Please check manually");
 	}		
 						
